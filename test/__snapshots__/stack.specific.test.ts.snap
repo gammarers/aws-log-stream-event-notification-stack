@@ -119,6 +119,153 @@ exports[`LogStreamEventNotificationStack default Testing Should match snapshot 1
     },
   },
   "Resources": {
+    "AwsLambdaExamplex1afuncLogGroupSubscription85F8E41E": {
+      "DependsOn": [
+        "AwsLambdaExamplex1afuncLogGroupSubscriptionCanInvokeLambdaF70CA12E",
+      ],
+      "Properties": {
+        "DestinationArn": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "FilterPattern": "{ ($.level = "ERROR") || ($.level = "WARN") }",
+        "LogGroupName": "/aws/lambda/example-x1a-func",
+      },
+      "Type": "AWS::Logs::SubscriptionFilter",
+    },
+    "AwsLambdaExamplex1afuncLogGroupSubscriptionCanInvokeLambdaF70CA12E": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "Principal": "logs.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":logs:",
+              {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId",
+              },
+              ":log-group:/aws/lambda/example-x1a-func:*",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "AwsLambdaExamplex2afuncLogGroupSubscriptionCanInvokeLambdaAED66121": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "Principal": "logs.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":logs:",
+              {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId",
+              },
+              ":log-group:/aws/lambda/example-x2a-func:*",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "AwsLambdaExamplex2afuncLogGroupSubscriptionE8893324": {
+      "DependsOn": [
+        "AwsLambdaExamplex2afuncLogGroupSubscriptionCanInvokeLambdaAED66121",
+      ],
+      "Properties": {
+        "DestinationArn": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "FilterPattern": "{ ($.level = "ERROR") || ($.level = "WARN") }",
+        "LogGroupName": "/aws/lambda/example-x2a-func",
+      },
+      "Type": "AWS::Logs::SubscriptionFilter",
+    },
+    "AwsLambdaExamplex3afuncLogGroupSubscriptionC027425C": {
+      "DependsOn": [
+        "AwsLambdaExamplex3afuncLogGroupSubscriptionCanInvokeLambdaF9904B14",
+      ],
+      "Properties": {
+        "DestinationArn": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "FilterPattern": "{ ($.level = "ERROR") || ($.level = "WARN") }",
+        "LogGroupName": "/aws/lambda/example-x3a-func",
+      },
+      "Type": "AWS::Logs::SubscriptionFilter",
+    },
+    "AwsLambdaExamplex3afuncLogGroupSubscriptionCanInvokeLambdaF9904B14": {
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LogStreamEventTriggerParserFunction924F8116",
+            "Arn",
+          ],
+        },
+        "Principal": "logs.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition",
+              },
+              ":logs:",
+              {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId",
+              },
+              ":log-group:/aws/lambda/example-x3a-func:*",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
     "LogStreamEventNotifierLambdaFunctionLogSubscriptionFuncSuccessRule4992E51C": {
       "Properties": {
         "EventPattern": {
@@ -495,6 +642,26 @@ exports[`LogStreamEventNotificationStack default Testing Should match snapshot 1
     },
     "NotificationTopicEB7A0DF1": {
       "Type": "AWS::SNS::Topic",
+    },
+    "NotificationTopicbarexamplecom9EB28562": {
+      "Properties": {
+        "Endpoint": "bar@example.com",
+        "Protocol": "email",
+        "TopicArn": {
+          "Ref": "NotificationTopicEB7A0DF1",
+        },
+      },
+      "Type": "AWS::SNS::Subscription",
+    },
+    "NotificationTopicfooexamplecom623834B6": {
+      "Properties": {
+        "Endpoint": "foo@example.com",
+        "Protocol": "email",
+        "TopicArn": {
+          "Ref": "NotificationTopicEB7A0DF1",
+        },
+      },
+      "Type": "AWS::SNS::Subscription",
     },
   },
   "Rules": {
