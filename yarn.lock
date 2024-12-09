@@ -360,6 +360,16 @@
   dependencies:
     levn "^0.4.1"
 
+"@gammarers/aws-log-stream-event-notifier@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-notifier/-/aws-log-stream-event-notifier-0.1.5.tgz#25e8d4cb6c8a5f1967edcd85ab0d34a7bc41a5af"
+  integrity sha512-ljmLZIpBx3rOK2xEoJa80XvhLaKrCmtxOhok2guHatBtYyof+XBf4lmDq7V/duCmkE0RM8Vj0SNHWECPQRQxAw==
+
+"@gammarers/aws-log-stream-event-trigger@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-trigger/-/aws-log-stream-event-trigger-0.3.6.tgz#9a1f8a31d7b9635aedf23b22c98e0ebdd6359c41"
+  integrity sha512-SRpgRE75fpFRNCyBJwN90PRITNvJvtni5xpXZtXsO2+Novy2Fk2TIzD3+MasHX4pCYHQKkRj63uZR0E/RmVHNQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"

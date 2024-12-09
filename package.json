@@ -61,6 +61,10 @@
     "aws-cdk-lib": "^2.120.0",
     "constructs": "^10.0.5"
   },
+  "dependencies": {
+    "@gammarers/aws-log-stream-event-notifier": "^0.1.5",
+    "@gammarers/aws-log-stream-event-trigger": "^0.3.6"
+  },
   "keywords": [
     "cdk"
   ],
