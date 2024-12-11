@@ -1,5 +1,6 @@
 {
   "name": "@gammarers/aws-log-stream-event-notification-stack",
+  "description": "This AWS CDK construct stack subscribes to a CloudWatch Logs log stream, and when a target log level is detected, it sends the log information to a Step Functions state machine via a Lambda function. The state machine processes and formats the log information, then publishes a message to the target SNS topic. But CloudWatch Logs by a Node.js-based Lambda function only.",
   "repository": {
     "type": "git",
     "url": "https://github.com/gammarers/aws-log-stream-event-notification-stack.git"
@@ -66,7 +67,14 @@
     "@gammarers/aws-log-stream-event-trigger": "^0.3.6"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "aws-cdk",
+    "cdk",
+    "lambda",
+    "log",
+    "notification",
+    "stepfuncstions",
+    "subscription"
   ],
   "engines": {
     "node": ">= 18.0.0"
