@@ -13,7 +13,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@gammarers/aws-log-stream-event-trigger@^0.3.6',
     '@gammarers/aws-log-stream-event-notifier@^0.1.5',
   ],
-  releaseToNpm: false, // tmp
+  releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '22.4.x',
