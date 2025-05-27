@@ -12,8 +12,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-log-stream-event-notification-stack.git',
   deps: [
-    '@gammarers/aws-log-stream-event-trigger@^0.3.6',
-    '@gammarers/aws-log-stream-event-notifier@^0.1.5',
+    '@gammarers/aws-log-stream-event-trigger@^1.0.0',
+    '@gammarers/aws-log-stream-event-notifier@^1.0.0',
   ],
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,

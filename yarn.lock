@@ -430,15 +430,15 @@
     "@eslint/core" "^0.14.0"
     levn "^0.4.1"
 
-"@gammarers/aws-log-stream-event-notifier@^0.1.5":
-  version "0.1.29"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-notifier/-/aws-log-stream-event-notifier-0.1.29.tgz#f98d6b4953b28f8271db07c91b5da91a353a2686"
-  integrity sha512-kgTqVf8OWtIyBZc9OJI2FSBvkFyrdM4anB6nDJDVDbeIb2yx3UAMjvJl0YY4zdyNODHAlC0rJzjRdLL38wdfIQ==
+"@gammarers/aws-log-stream-event-notifier@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-notifier/-/aws-log-stream-event-notifier-1.0.0.tgz#8ea11e26f9ee3f05fe3a76226f001f5819acee0e"
+  integrity sha512-AktjBh9zzkb/ne9rk3YBDmh8tk3CrBqkRS6Q/H87CjhvILbJJmFmt+ZdqkMWI+RHVNqN7h8e8g0atL4uJKWKBw==
 
-"@gammarers/aws-log-stream-event-trigger@^0.3.6":
-  version "0.3.30"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-trigger/-/aws-log-stream-event-trigger-0.3.30.tgz#b835f1d760cc76cc1e7b68f13b2dc19bf6f8d6cc"
-  integrity sha512-btjTj5a/AENeWZkHgQ6K3kVvyLzGHxiEDXhMBh0kOZ/3xHRVSl2crqymzEtGqiqUkVD3JVGEhTAhyYV0HvtjBg==
+"@gammarers/aws-log-stream-event-trigger@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-log-stream-event-trigger/-/aws-log-stream-event-trigger-1.0.0.tgz#8bac1594299cccec4319a250389cc02743aa31ee"
+  integrity sha512-5xi5+9qdylxLvwtRAj6E2cfs5Cmg+drxJf8Gcp/dRR1w9qvjVHMfdAAr/59xqlHtnGAW99lmftf2stp0wKG3Qg==
 
 "@humanfs/core@^0.19.1":
   version "0.19.1"

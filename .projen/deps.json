@@ -103,12 +103,12 @@
     },
     {
       "name": "@gammarers/aws-log-stream-event-notifier",
-      "version": "^0.1.5",
+      "version": "^1.0.0",
       "type": "runtime"
     },
     {
       "name": "@gammarers/aws-log-stream-event-trigger",
-      "version": "^0.3.6",
+      "version": "^1.0.0",
       "type": "runtime"
     }
   ],
