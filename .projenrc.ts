@@ -11,6 +11,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'This AWS CDK construct stack subscribes to a CloudWatch Logs log stream, and when a target log level is detected, it sends the log information to a Step Functions state machine via a Lambda function. The state machine processes and formats the log information, then publishes a message to the target SNS topic. But CloudWatch Logs by a Node.js-based Lambda function only.',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-log-stream-event-notification-stack.git',
+  majorVersion: 1,
   deps: [
     '@gammarers/aws-log-stream-event-trigger@^1.0.0',
     '@gammarers/aws-log-stream-event-notifier@^1.0.0',
